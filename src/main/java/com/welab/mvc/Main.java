@@ -8,6 +8,8 @@ import org.apache.catalina.Context;
 import org.apache.catalina.Host;
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.startup.Tomcat;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.ServletException;
 import java.io.IOException;
@@ -19,7 +21,19 @@ import java.io.IOException;
  */
 public class Main {
 
+	private static final String BANNER =
+			"  .   ____          _            __ _ _\n" +
+			" /\\\\ / ___'_ __ _ _(_)_ __  __ _ \\ \\ \\ \\\n" +
+			"( ( )\\___ | '_ | '_| | '_ \\/ _` | \\ \\ \\ \\\n" +
+			" \\\\/  ___)| |_)| | | | | || (_| |  ) ) ) )\n" +
+			"  '  |____| .__|_| |_|_| |_\\__, | / / / /\n" +
+			" =========|_|==============|___/=/_/_/_/\n" +
+			" :: Spring Boot ::  (v2.0.0.BUILD-SNAPSHOT)\n";
+
+
 	public static void main(String[] args) throws ServletException, LifecycleException, IOException {
+
+		System.out.println(BANNER);
 
 		String hostName = "localhost";
 		int port = 8080;

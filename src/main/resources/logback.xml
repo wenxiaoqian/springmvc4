@@ -31,4 +31,5 @@
     <logger name="org.springframework" additivity="true" level="info" />
     <logger name="org.apache.mybatis" additivity="true" level="debug"/>
     <logger name="java.sql" additivity="true" level="debug"/>
+    <logger name="net.sf.ehcache" additivity="true" level="info"/>
 </configuration>

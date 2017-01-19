@@ -20,7 +20,7 @@ public class CustomServletContainerInitializer implements ServletContainerInitia
 		System.out.println("CustomServletContainerInitializer.onStartup");
 		if (set != null) {
 			for (Class c : set) {
-				System.out.println(c.getName());
+				//System.out.println(c.getName());
 			}
 		}
 
